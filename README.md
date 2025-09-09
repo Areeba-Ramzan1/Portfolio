@@ -33,7 +33,7 @@ Built with **HTML, CSS, JavaScript** and enhanced using animations and libraries
 ## 🚀 Deployment
 
 The portfolio is live on **Vercel**.  
-👉 [Live Demo on Vercel]("https://areeba-ramzan-portfolio.vercel.app/")
+👉 [Live Demo on Vercel](https://areeba-ramzan-portfolio.vercel.app/)
 
 ---
 
