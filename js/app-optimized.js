@@ -138,6 +138,30 @@ function init() {
   initPortfolioFilter();
   initMobileNav();
 
+  // Resume download handler
+  // const downloadBtn = document.querySelector('#download-cv');
+  // if (downloadBtn) {
+  //   downloadBtn.addEventListener('click', () => {
+  //     console.log('Download button clicked');
+  //   });
+  // }
+
+
+  const downloadBtn = document.querySelector('#download-cv');
+
+  if (downloadBtn) {
+    downloadBtn.addEventListener('click', (e) => {
+      e.preventDefault(); // prevent default link behavior
+      const link = document.createElement('a');
+      link.href = 'AreebaResume.pdf';
+      link.download = 'Areeba-Ramzan-CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  }
+
+
   // Reinitialize on window resize
   window.addEventListener('resize', () => {
     initMobileNav();
