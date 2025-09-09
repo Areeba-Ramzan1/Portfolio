@@ -1,0 +1,61 @@
+.mode-switcher { position: fixed;right: 0;top: 25px;padding: 15px;width: 220px;border: 1px solid var(--bg-black-50);
+background: var(--bg-black-100);z-index: 100;border-radius: 5px;transition: all 0.3s ease;transform: translateX(100%)}
+
+.mode-switcher.open {transform: translateX(-10px)}
+
+.mode-switcher .s-icon {position: absolute;height: 35px;width: 35px;text-align: center;font-size: 18px;
+    background: var(--bg-black-100);color: var(--text-black-900);right: 100%;margin-right: 15px;border: 2px solid var(--skin-color);
+    margin-top: 4px;cursor: pointer;transition: all 0.3s ease;border-radius: 50%}
+
+.mode-switcher .s-icon i {line-height: 34px}
+
+.mode-switcher .mode-swichter-toggler {top: 0px}
+
+.mode-switcher .day-night {top: 40px}
+
+.mode-switcher h4 {margin: 0 0 10px;color: var(--text-black-700);font: 16px;font-weight: 600;text-transform: capitalize}
+
+.mode-switcher .colors {display: flex;flex-wrap: wrap;justify-content: space-between}
+
+.mode-switcher .colors span {display: inline-block;height: 20px;width: 20px;border-radius: 50%}
+
+.mode-switcher .colors {display: grid;grid-template-columns: repeat(4, 1fr);gap: 8px;margin-top: 10px}
+
+.mode-switcher .color-1 {background-color: #0f9b78}
+
+.mode-switcher .color-2 {background-color: #1e90ff}
+
+.mode-switcher .color-3 { background-color: #ff3b30}
+
+.mode-switcher .color-4 {background-color: #7b61ff}
+
+.mode-switcher .color-5 {background-color: #00b894}
+
+.mode-switcher .color-6 {background-color: #ff7aa2}
+
+.mode-switcher .color-7 {background-color: #B03052}
+
+.mode-switcher .color-8 {background-color: #FEA405}
+
+@media (min-width: 250px) and (max-width: 768px) {
+
+    /* Mode Switcher and color varient start */
+.mode-switcher {top: 55px;padding: 8px;width: 110px}
+
+.mode-switcher .s-icon {height: 26px;width: 26px;font-size: 14px;margin-top: 3px}
+
+.mode-switcher .s-icon i {line-height: 25px}
+
+.mode-switcher h4 {margin: 0 0 10px;font-size: 14px;font-weight: 200}
+
+.mode-switcher .day-night {top: 30px}
+
+.mode-switcher .colors {justify-content: space-around}
+
+.mode-switcher .colors span {height: 12px;width: 12px}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .mode-switcher {top: 75px}
+
+}
